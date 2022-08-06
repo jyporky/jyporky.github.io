@@ -1,0 +1,702 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+html{
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+*{
+    margin: 0%;
+}
+
+body{
+    background-color: rgb(34,34,34);
+}
+
+/* Phone*/
+@media screen and (min-width: 0px) and (max-width: 540px){
+    .top-1{
+        display:flex;
+        width: 60%;
+    }
+    .top-2{
+        display:flex;
+        width: 5%;
+    }
+    .menu{
+        display:flex;
+        height:12vh;
+    }
+    .top-3, .top-4, .top-5{
+        padding: 16px 16px 0px 20px;
+        opacity: 0;
+        font-size:4vh;
+        background-color: rgb(10, 19, 25);
+        width:100%;
+        transform: translate(0,-100vh);
+    }
+    .float{
+        height:12vh;
+        font-size:5vh;
+    }
+    .placeholder{
+        height: 12vh;
+    }
+    .content{
+        font-size: 2vh;
+        padding-top: 5vh;
+    }
+    .header{
+        font-size: 4vh;
+        padding-top: 4vh;
+    }
+    .sc-1, .sc-2, .sc-3{
+        margin-left: 10vw;
+        width: 80vw;
+        font-size: 5vh;
+    }
+    .ab{
+        width:80vw;
+    }
+    .half{
+        width: 100%;
+    }
+    .gp-1{
+        width: 100%;
+        font-size: 4vh;
+        padding: 2vw;
+    }
+    
+    .gp-2, .gp-4{
+        margin-top: 5vh;
+        padding-left: 2vw;
+        width: 45%;
+        font-size: 4vh;
+    }
+    
+    .gp-3{
+        width: 100%;
+        font-size: 2vh;
+        padding: 3vw;
+    }
+    .scale{
+        width:30%;
+    }
+    .t-ch, .t-do, .t-ba, .t-wi, .t-dr{
+        font-size: 1vh;
+    }
+    .t-scale{
+        width:5.5vw;
+    }
+    .t-1{
+        font-size: 3.5vh;
+    }
+    .t-2{
+        font-size: 2vh;
+    }
+    .t-3{
+        padding: 2vw;
+    }
+    .to-1{
+        font-size: 4.5vh;
+    }
+    .to-2{
+        padding: 2vw;
+        width: 90%;
+        font-size: 2vh;
+    }
+    
+    .to-3{
+        padding: 2vw;
+        width: 90%;
+        font-size: 3vh;
+    } 
+
+    .standard-1{
+        font-size: 4.5vh;
+    }
+    .standard-2{
+        padding: 2vw;
+        width: 90%;
+        font-size: 2vh;
+    }
+    
+    .standard-3{
+        padding: 2vw;
+        width: 50%;
+        font-size: 3vh;
+    }
+    .standard-4{
+        padding: 2vw;
+        width: 70%;
+        font-size: 3vh;
+    }
+    
+    .to-scale{
+        width:15%;
+    }
+}
+
+/* Mobile Phone*/
+@media screen and (min-width: 541px) and (max-width: 720px){
+    .top-1{
+        display:flex;
+        width: 60%;
+    }
+    .top-2{
+        display:flex;
+        width: 10%;
+    }
+    .menu{
+        display:flex;
+        height:15vh;
+    }
+    .top-3, .top-4, .top-5{
+        padding: 16px 16px 0px 20px;
+        opacity: 0;
+        font-size:5vh;
+        background-color: rgb(10, 19, 25);
+        width:100%;
+        transform: translate(0,-100vh);
+    }
+    .float{
+        height:20vh;
+        font-size:8vh;
+    }
+    .placeholder{
+        height: 20vh;
+    }
+    .content{
+        font-size: 2.5vh;
+        padding-top: 4vh;
+    }
+    .header{
+        font-size: 5vh;
+        padding-top: 4vh;
+    }
+    .sc-1, .sc-2, .sc-3{
+        margin-left: 10vw;
+        width: 80vw;
+        font-size: 5vh;
+    }
+    .ab{
+        width:80vw;
+    }
+    .half{
+        width: 100%;
+    }
+    .gp-1{
+        width: 100%;
+        font-size: 4vh;
+        padding: 2vw;
+    }
+    
+    .gp-2, .gp-4{
+        margin-top: 5vh;
+        padding-left: 2vw;
+        width: 45%;
+        font-size: 4vh;
+    }
+    
+    .gp-3{
+        width: 100%;
+        font-size: 2.5vh;
+        padding: 4vw;
+    }
+    .scale{
+        width:30%;
+    }
+    .t-ch, .t-do, .t-ba, .t-wi, .t-dr{
+        font-size: 2vh;
+    }
+    .t-scale{
+        width:5.5vw;
+    }
+    .t-1{
+        font-size: 4vh;
+    }
+    .t-2{
+        font-size: 2.5vh;
+    }
+    .t-3{
+        padding: 2vw;
+    }
+    .to-1{
+        font-size: 4.5vh;
+    }
+    .to-2{
+        padding: 2vw;
+        width: 90%;
+        font-size: 2.5vh;
+    }
+    
+    .to-3{
+        padding: 2vw;
+        width: 90%;
+        font-size: 4vh;
+    } 
+
+    .standard-1{
+        font-size: 4.5vh;
+    }
+    .standard-2{
+        padding: 2vw;
+        width: 90%;
+        font-size: 2.5vh;
+    }
+    
+    .standard-3{
+        padding: 2vw;
+        width: 50%;
+        font-size: 4vh;
+    }
+    .standard-4{
+        padding: 2vw;
+        width: 70%;
+        font-size: 4vh;
+    }
+    
+    .to-scale{
+        width:15%;
+    }
+}
+
+/* Table/ Tablet*/
+@media screen and (min-width: 721px) and (max-width: 1080px){
+    .top-1{
+        display:flex;
+        width: 50%;
+    }
+    .top-2{
+        display:flex;
+        width: 20%;
+    }
+    .menu{
+        display:flex;
+        height:20vh;
+    }
+    .top-3, .top-4, .top-5{
+        padding: 16px 16px 0px 20px;
+        opacity: 0;
+        font-size:6vh;
+        background-color: rgb(10, 19, 25);
+        width:100%;
+        transform: translate(0,-100vh);
+    }
+    .float{
+        height:20vh;
+        font-size:8vh;
+    }
+    .placeholder{
+        height: 20vh;
+    }
+    .header{
+        font-size: 5vh;
+        padding-top: 6vh;
+    }
+    .content{
+        font-size: 3vh;
+        padding-top: 6vh;
+    }
+    .sc-1, .sc-2, .sc-3{
+        margin-left: 10vw;
+        width: 80vw;
+        font-size: 5vh;
+    }
+    .ab{
+        width:80vw;
+    }
+    .half{
+        width: 100%;
+    }
+    .gp-1{
+        padding: 2vw;
+        width: 100%;
+        font-size: 6vh;
+        height: 10vh;
+    }
+    
+    .gp-2, .gp-4{
+        margin-top: 10vh;
+        padding-left: 2vw;
+        width: 45%;
+        height: 30vh;
+        font-size: 6vh;
+    }
+    
+    .gp-3{
+        padding: 3vw;
+        width: 100%;
+        font-size: 3.5vh;
+    }
+    .scale{
+        height:50%;
+    }
+    .t-ch, .t-do, .t-ba, .t-wi, .t-dr{
+        font-size: 3vh;
+    }
+    .t-scale{
+        width:5.5vw;
+    }
+    .t-1{
+        font-size: 5vh;
+    }
+    .t-2{
+        font-size: 3.5vh;
+    }
+    .t-3{
+        padding: 2vw;
+    }
+    .to-1{
+        font-size: 5vh;
+    }
+    .to-2{
+        padding: 2vw;
+        width: 90%;
+        font-size: 3.5vh;
+    }
+    
+    .to-3{
+        padding: 2vw;
+        width: 90%;
+        font-size: 4.5vh;
+    } 
+
+    .standard-1{
+        font-size: 5vh;
+    }
+    .standard-2{
+        padding: 2vw;
+        width: 90%;
+        font-size: 3.5vh;
+    }
+    
+    .standard-3{
+        padding: 2vw;
+        width: 50%;
+        font-size: 4.5vh;
+    }
+
+    .standard-4{
+        padding: 2vw;
+        width: 70%;
+        font-size: 4.5vh;
+    }
+    
+    .to-scale{
+        width:18%;
+    }
+}
+
+/* Desktop*/
+@media screen and (min-width: 1081px){
+    .top-1{
+        display:flex;
+        width: 15%;
+    }
+    .top-2{
+        display:flex;
+        width: 10%
+    }
+    .top-3, .top-4, .top-5{
+        display:flex;
+        width: 25%;
+    }
+    .float{
+        height:10vh;
+        font-size:4vh;
+        width: 100%;
+    }
+    .menu{
+        display: none;
+    }
+    .placeholder{
+        height: 10vh;
+    }
+    .header{
+        font-size: 6vh;
+        padding-top: 10vh;
+    }
+    .content{
+        font-size: 4vh;
+        padding-top: 10vh;
+    }
+    .sc-1, .sc-2, .sc-3{
+        margin-left: 10vw;
+        width: 20vw;
+        font-size: 3vh;
+    }
+    .ab{
+        width:20vw;
+    }
+    .half{
+        width: 50%;
+    }
+    .haf{
+        width: 50%;
+    }
+    .gp-1{
+        padding: 1vw;
+        width: 100%;
+        font-size: 6vh;
+    }
+    
+    .gp-2, .gp-4{
+        margin-top: 10vh;
+        width: 100%;
+        font-size: 6vh;
+    }
+    
+    .gp-3{
+        padding: 2vw;
+        width: 100%;
+        font-size: 4vh;
+    }
+    .scale{
+        width:20%;
+    }
+    .t-ch, .t-do, .t-ba, .t-wi, .t-dr{
+        font-size: 5vh;
+    }
+    .t-scale{
+        width:6vw;
+    }
+    .t-1{
+        font-size: 6vh;
+    }
+    .t-2{
+        font-size: 4vh;
+    }
+    .t-3{
+        padding: 2vw;
+    }
+    .to-1{
+        font-size: 6vh;
+    }
+    .to-2{
+        padding: 2vw;
+        width: 45%;
+        font-size: 4vh;
+    }
+    
+    .to-3{
+        padding: 2vw;
+        width: 45%;
+        font-size: 5vh;
+    }
+
+    .standard-1{
+        font-size: 6vh;
+    }
+    .standard-2{
+        padding: 2vw;
+        width: 45%;
+        font-size: 4vh;
+    }
+    
+    .standard-3{
+        padding: 2vw;
+        width: 45%;
+        font-size: 5vh;
+    }
+
+    .standard-4{
+        padding: 2vw;
+        width: 45%;
+        font-size: 5vh;
+    }
+    .to-scale{
+        width:20%;
+    }
+}
+
+.float
+{
+    position: fixed;
+    display:flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.top-1, .top-2, .top-3, .top-4, .top-5{
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.white{
+    color:white;
+}
+
+.open{
+    opacity: 1;
+    transition: opacity 1s ease;
+    z-index: 1;
+    transform: translate(0,0vh);
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+}
+
+.imgscale{
+    width: 100%;
+    height:100%;
+    z-index: 0;
+}
+
+.light{
+    opacity: 0.3;
+}
+
+.shortcut{
+    display:flex;
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+}
+
+.box{
+    border: 1px solid white;
+}
+
+.sc-1, .sc-2, .sc-3{
+    position:relative;
+}
+
+.ab{
+    position: absolute;
+    top:0;
+    height: 100%;
+}
+
+.textab{
+    display:flex;
+    position: relative;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:100%;
+}
+
+.link{
+    text-decoration: 0;
+}
+
+.gameplay{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gp-1 , .gp-2, .gp-3,.gp-4{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.half{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.t-1,.t-2,.t-3{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.t-1{
+    padding: 1vw;
+    width:100%;
+}
+
+.t-2{
+    padding: 2vw;
+    width:100%;
+}
+
+.t-3{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.t-ch{
+    width: 21%;
+}
+
+.t-do{
+    width: 21%;
+}
+
+.t-ba{
+    width: 14%;
+}
+
+.t-wi{
+    width: 21%;
+}
+
+.t-dr{
+    width: 21%;
+}
+
+.none{
+    display:none;
+}
+
+.turn-order{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.to-1{
+    width:100%;
+    padding: 2vw;
+}
+
+.standard{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.standard-1{
+    width:100%;
+    padding: 2vw;
+}
+
+.p-scale{
+    width: 20%;
+}

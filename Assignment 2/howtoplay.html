@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
+  <meta name="viewport" content="width=device-width, initial scale=1">
+  <title>Layout Shifter</title>
+</head>
+
+<body>
+    <div class="float">
+        <div class="top-1 white">
+            <a href="index.html" class="link white">Mahjong</a>
+          </div>
+          <div class="top-2 white"></div>
+          <div class="menu">
+            <img src="./image/menu.png" class="menu">
+          </div>
+          <div class="top-3 drop">
+            <a href="overview.html" class="link white">Game Overview</a>
+          </div>
+          <div class="top-4 drop">
+            <a href="howtoplay.html" class="link white">How to Play</a>
+          </div>
+          <div class="top-5 drop">
+            <a href="tips.html" class="link white">Tips and Tricks</a>
+          </div>
+    </div>
+
+    <div class="placeholder"></div>
+
+    <div class="gameplay">
+      <div class="half">
+        <div class="gp-1 white">Main Goal Of the Game</div>
+        <div class="gp-3 white">
+          The main goal of the game is to call a win when holding a winning hand.
+          A winning hand consist of 4 sets and 1 pairs. When it is your turn, you
+          draw a tile, and discard a tile. You usually want to either form sequence
+          or triplets to get a set. There are a few ways to get a set, you can either
+          draw it on your own, or form it by discarded tiles directly from opponent.
+          More about these will be mentioned later. Since you only ever have 13 tiles
+          on your hand. Your 14th tile should either be self-drawn or be from other players.
+          You can either chow, pong or gang someone's discard tiles to form a set. When calling
+          it, you will reveal the tiles you used to chow/pong/gang, and take the discard tile and
+          displace it facing up on the side.
+        </div>
+      </div>
+
+      <div class="half">
+        <div class="gp-2 white">
+          <img src="./image/tiles/cha5.png" class="scale pair">
+          <img src="./image/tiles/cha5.png" class="scale pair">
+          <div class="white textscale">Pairs (Eyes)</div>
+        </div>
+        <div class="gp-4 white">
+          <img src="./image/tiles/cha5.png" class="scale set">
+          <img src="./image/tiles/cha5.png" class="scale set">
+          <img src="./image/tiles/cha5.png" class="scale set">
+          <div class="white textscale">Sets</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="standard">
+      <div class="standard-1 white">Chow</div>
+      <div class="standard-2 white">
+        Chow is a method of getting sets from other player's discarded tiles. There are a
+        few condition to meet when calling a chow. The person who discard that tile you wanted
+        must be the player before your turn. You are not allowed to chow from other players.
+        Secondly, it must be a valid sequence, for example. You can chow if you have a 4 pin, 5pin
+        and player throws a 6pin. Thirdly, there must be no other player that will pong/gang that tile.
+        This is because chow and gang takes more priority than chow. So lets say a player throw a 3 pin,
+        you call chow, but someone else call pong or gang, that tile will go to them even though you call
+        chow first.
+      </div>
+      <div class="standard-3">
+        <img src="image/tiles/cha4.png" class="scale chow">
+        <img src="image/tiles/cha5.png" class="scale chow">
+        <img src="image/tiles/cha6.png" class="scale chow">
+        <div class="white">Chow</div>
+      </div>
+    </div>
+
+    <div class="standard">
+      <div class="standard-1 white">Pong</div>
+      <div class="standard-2 white">
+        Pong is an another method of getting sets from other player's discarded tiles.
+        Unlike chow, you can get discard tiles from anyone. Do note that you must already
+        have a pair of the same tile as the discarded tiles in order to call pong. If someone else
+        call chow when you call pong, the tiles still goes to you as pong takes higher priority.
+      </div>
+      <div class="standard-3">
+        <img src="image/tiles/red.png" class="scale pong">
+        <img src="image/tiles/red.png" class="scale pong">
+        <img src="image/tiles/red.png" class="scale pong">
+        <div class="white">Pong</div>
+      </div>
+    </div>
+
+    <div class="standard">
+      <div class="standard-1 white">Kong</div>
+      <div class="standard-2 white">
+        Kong is an another method of getting sets from other player's discarded tiles.
+        It is one of the hardest set to get unlike chow and kong. You firstly need 3 of the same
+        tile in order to set up for a kong. Usually making kong is not worth it unless you all doing
+        all triplets win, there are situations where a kong can affect other player's hand. For example
+        if the other player needs 5 pin to create a sequence set, you kong 5 pin away, the player has to
+        destroy a no longer potential set. There are 3 ways to kong, one by other player's discard tiles,
+        two by drawing a tile u have pong before, like drawing 4 pin when you have
+        pong a 4pin before, and lastly the hardest, when you have 4 of the same tiles on hand.
+      </div>
+      <div class="standard-4">
+        <img src="image/tiles/cha2.png" class="p-scale kong">
+        <img src="image/tiles/cha2.png" class="p-scale kong">
+        <img src="image/tiles/cha2.png" class="p-scale kong">
+        <img src="image/tiles/cha2.png" class="p-scale kong">
+        <div class="white">Kong</div>
+      </div>
+    </div>
+
+    <div class="tile">
+      <div class="t-1 white">How to Win</div>
+      <div class="t-2 white">
+        The main goal of a game is to try and set-up a winning hand and try to win. It is actually not
+        that easy to win. In order to win, you need to get 3 sets as well as a pair. If it was just that
+        stopping people from winning, the game would have been a lot easier. There is this thing called fan
+        or tai, basically points. You need a minimum of 1 point in order to win, you are unable to just win
+        with a random 3 sets and a pair that does not give any tai/fan. A simple way to get tai/fan is one
+        of the following: Either get a dragon tile or do all triplets or all sequence. To know more about
+        tai/fan see tips and tricks.
+      </div>
+      <div class="t-3">
+        <div class="t-ch">
+          <img src="image/tiles/cha5.png" class="t-scale">
+          <img src="image/tiles/cha5.png" class="t-scale">
+          <img src="image/tiles/cha5.png" class="t-scale">
+        </div>
+        <div class="t-do">
+          <img src="image/tiles/dot5.png" class="t-scale">
+          <img src="image/tiles/dot6.png" class="t-scale">
+          <img src="image/tiles/dot7.png" class="t-scale">
+        </div>
+        <div class="t-ba">
+          <img src="image/tiles/bam3.png" class="none">
+          <img src="image/tiles/bam3.png" class="t-scale">
+          <img src="image/tiles/bam3.png" class="t-scale">
+        </div>
+        <div class="t-wi">
+          <img src="image/tiles/east.png" class="t-scale">
+          <img src="image/tiles/east.png" class="t-scale">
+          <img src="image/tiles/east.png" class="t-scale">
+        </div>
+        <div class="t-dr">
+          <img src="image/tiles/red.png" class="t-scale">
+          <img src="image/tiles/red.png" class="t-scale">
+          <img src="image/tiles/red.png" class="t-scale">
+        </div>
+      </div>
+    </div>
+
+    <script src="js/js.js"></script>
+</body>

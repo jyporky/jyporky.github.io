@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/css.css">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"> -->
+  <meta name="viewport" content="width=device-width, initial scale=1">
+  <title>Layout Shifter</title>
+</head>
+
+<body>
+    <div class="float">
+        <div class="top-1 white">
+            <a href="index.html" class="link white">Mahjong</a>
+          </div>
+          <div class="top-2 white"></div>
+          <div class="menu">
+            <img src="./image/menu.png" class="menu">
+          </div>
+          <div class="top-3 drop">
+            <a href="overview.html" class="link white">Game Overview</a>
+          </div>
+          <div class="top-4 drop">
+            <a href="howtoplay.html" class="link white">How to Play</a>
+          </div>
+          <div class="top-5 drop">
+            <a href="tips.html" class="link white">Tips and Tricks</a>
+          </div>
+    </div>
+
+    <div class="placeholder"></div>
+
+    <div class="gameplay">
+      <div class="half">
+        <div class="gp-1 white">Overall Gameplay</div>
+        <div class="gp-3 white">
+          The game is played with a set of 144 tiles based on Chinese characters and symbols,
+          although some regional variations may omit some tiles or add unique ones. 
+          In most variations, each player begins by receiving 13 tiles. 
+          In turn, players draw and discard tiles until they complete a legal 
+          hand using the 14th drawn tile to form four melds (or sets) and a pair (eye). 
+          A player can also win with a small class of special hands. While many variations of mahjong exist, 
+          most variations have some basic rules in common including how a piece is drawn and discarded, 
+          how a piece is robbed from another player, the use of suits (numbered tiles) and honors (winds and dragons), 
+          the basic kinds of melds allowed, how to deal the tiles and the order of play. Beyond these basic common rules, 
+          numerous regional variations exist which may have notably different criteria for legal melds and winning hands, 
+          radically different scoring systems and even elaborate extra rules. 
+          A group of players may introduce their own house rules which can notably change the feel of play.
+        </div>
+      </div>
+
+      <div class="half">
+        <div class="gp-2 white">
+          <img src="./image/tiles/cha5.png" class="scale pair">
+          <img src="./image/tiles/cha5.png" class="scale pair">
+          <div class="white textscale">Pairs (Eyes)</div>
+        </div>
+        <div class="gp-4 white">
+          <img src="./image/tiles/cha5.png" class="scale set">
+          <img src="./image/tiles/cha5.png" class="scale set">
+          <img src="./image/tiles/cha5.png" class="scale set">
+          <div class="white textscale">Sets</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tile">
+      <div class="t-1 white">Mahjong Tiles</div>
+      <div class="t-2 white">
+        Mahjong is played with a standard set of 144 mahjong tiles. There are always 4 copy of every tiles.
+        The tiles are splited into 3 categories: Suited, Honors and Bonus.
+        Suited tiles are divided into three suits and each are numbered from 1 to 9.
+        The suits are bamboos, dots, and characters. There are four identical copies of each suited tile totaling 108 tiles.
+        There are two different sets of honors tiles: winds and dragons.
+        The winds are east, south, west, and north, beginning with east.
+        The dragons are red, green, and white.
+        There are two sets of bonus tiles: flowers and seasons. The flower and season tiles play a unique role in the mechanics of the game.
+        We will talk more about Bonus Tiles later.
+      </div>
+      <div class="t-3">
+        <div class="t-ch">
+          <img src="image/tiles/cha5.png" class="t-scale">
+          <img src="image/tiles/cha5.png" class="t-scale">
+          <img src="image/tiles/cha5.png" class="t-scale">
+          <div class="white">Characters</div>
+        </div>
+        <div class="t-do">
+          <img src="image/tiles/dot5.png" class="t-scale">
+          <img src="image/tiles/dot6.png" class="t-scale">
+          <img src="image/tiles/dot7.png" class="t-scale">
+          <div class="white">Dots</div>
+        </div>
+        <div class="t-ba">
+          <img src="image/tiles/bam3.png" class="none">
+          <img src="image/tiles/bam3.png" class="t-scale">
+          <img src="image/tiles/bam3.png" class="t-scale">
+          <div class="white">Bamboos</div>
+        </div>
+        <div class="t-wi">
+          <img src="image/tiles/east.png" class="t-scale">
+          <img src="image/tiles/east.png" class="t-scale">
+          <img src="image/tiles/east.png" class="t-scale">
+          <div class="white">Wind</div>
+        </div>
+        <div class="t-dr">
+          <img src="image/tiles/red.png" class="t-scale">
+          <img src="image/tiles/red.png" class="t-scale">
+          <img src="image/tiles/red.png" class="t-scale">
+          <div class="white">Dragon</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="turn-order">
+      <div class="to-1 white">Turn Order</div>
+      <div class="to-2 white">
+        The dealer is chosen by various means.
+        One of the ways of determining turn order is to place the 4 wind tiles face down and shuffle them.
+        Each player randomly select one of these tiles and these tiles dictate their wind position.
+        Each player sits down at their respective position (called the wind position) at the table
+        in positions of an inverted compass: East is dealer, the right of the dealer is South,
+        across is West, and the left is North. The order of play is traditionally counter-clockwise.
+      </div>
+      <div class="to-3">
+        <img src="image/tiles/flip.png" class="to-scale">
+        <img src="image/tiles/flip.png" class="to-scale">
+        <img src="image/tiles/flip.png" class="to-scale">
+        <img src="image/tiles/flip.png" class="to-scale">
+        <div class="white" id="turn-order">Choose a tile</div>
+      </div>
+    </div>
+
+    <script src="js/js.js"></script>
+</body>
