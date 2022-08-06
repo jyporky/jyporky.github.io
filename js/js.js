@@ -99,7 +99,7 @@ function RandomTiles(i)
     {
        i = Math.floor(Math.random() * 34);
     }
-    var source = "Image/tiles/";
+    var source = "image/tiles/";
 
     if (i < 9)
     {
@@ -244,7 +244,7 @@ for (let i = 0; i < turntile.length; ++i)
 
 function DetermineTurnOrder(i)
 {
-    var source = "Image/tiles/";
+    var source = "image/tiles/";
     source += wind[i];
     return source;
 }
@@ -257,7 +257,7 @@ if (document.URL.includes("overview.html"))
     chooseTile.addEventListener('click', function(){
         if (TurnOrderTile){
         for (let i = 0; i < turntile.length; ++i){
-            turntile[i].src = "Image/tiles/flip.png";
+            turntile[i].src = "image/tiles/flip.png";
         }
         chooseTile.innerHTML = "Choose a tile";
         TurnOrderTile = false;
