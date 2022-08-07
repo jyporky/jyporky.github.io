@@ -81,6 +81,9 @@ body{
     .scale{
         width:30%;
     }
+    .l-scale{
+        width:50%;
+    }
     .t-ch, .t-do, .t-ba, .t-wi, .t-dr{
         font-size: 1vh;
     }
@@ -205,6 +208,9 @@ body{
     .scale{
         width:30%;
     }
+    .l-scale{
+        width:50%;
+    }
     .t-ch, .t-do, .t-ba, .t-wi, .t-dr{
         font-size: 2vh;
     }
@@ -261,7 +267,7 @@ body{
 }
 
 /* Table/ Tablet*/
-@media screen and (min-width: 721px) and (max-width: 1080px){
+@media screen and (min-width: 721px) and (max-width: 1440px){
     .top-1{
         display:flex;
         width: 50%;
@@ -331,6 +337,9 @@ body{
     .scale{
         height:50%;
     }
+    .l-scale{
+        height:50%;
+    }
     .t-ch, .t-do, .t-ba, .t-wi, .t-dr{
         font-size: 3vh;
     }
@@ -388,7 +397,7 @@ body{
 }
 
 /* Desktop*/
-@media screen and (min-width: 1081px){
+@media screen and (min-width: 1441px){
     .top-1{
         display:flex;
         width: 15%;
@@ -453,6 +462,9 @@ body{
     }
     .scale{
         width:20%;
+    }
+    .l-scale{
+        width:80%;
     }
     .t-ch, .t-do, .t-ba, .t-wi, .t-dr{
         font-size: 5vh;
