@@ -31,6 +31,77 @@
 
     <div class="placeholder"></div>
 
+    <div class="standard">
+      <div class="standard-1 white">How does the game go?</div>
+      <div class="standard-2 white">
+        In case you are wondering how long a usual mahjong game will take, it usually take 2-3 hrs to finish
+        a game from east to north given that no one "hold" the position of the host. Whenever the game ends,
+        depending on whether it is a draw or who wins, the host is either pass down to the next person or
+        the host remains as the same person. If the host win that match, the host remain, if someone else win
+        the host is pass down anti-clockwise. If the match ended as a draw, host is pass down anti-clockwise,
+        if someone kong in that match, the host remain. Once everyone has been the host and it is passed back to
+        the original host, the wind proceeds.
+      </div>
+      <div class="standard-3">
+        <img src="image/table.png" class="img-scale" id="table">
+        <div class="white" id="wind">East-1</div>
+        <div class="white" id="outcome">~Host Win~</div>
+        <div class="white" id="host">~Host Remain~</div>
+      </div>
+    </div>
+
+    <div class="standard">
+      <div class="standard-1 white">How does a game start?</div>
+      <div class="standard-2 white">
+        When a game starts, all players shuffle the faced down mahjong tiles. When the shuffling is done, all players
+        take 36 mahjong tiles each, stacking 2 together, so total of 18 stacks of mahjong on the table. Place the stacks
+        on your side and rotate it slightly. After that, it is time to decide whos tile to take from. The host will throw
+        3 dice. Depending on the number rolled, it determins both who tile to take and the cut off. Starting from the host as 1,
+        and the player counter-clockwise of you being 2, the player who get chosen are selected. For example, if a  5 is rolled,
+        the host tiles is chosen.  Count the number of stacksby dice rolled starting from the left. That next stack after the
+        number ends is where you will start taking the tiles. The host will first take 2 stack and the player counter-clockwise
+        will do the same. This repeat until all players has taken 2 stack 3 times. After that, the host will take the top tile
+        of the 1st and 3rd stack, while player 2 will take the 1st bottom tile. Player 3 top 2nd tile and player 4 bottom 2nd tile.
+        After that, the game will start. Player will continue to draw that tile from the order of which the tile is taken on their
+        turn. If any player kong, they will draw the tile at the very end of the tile stacks. Do note that game will end in a
+        draw if there are 7.5 stacks (15 tiles) left and no one has win yet.
+      </div>
+      <div class="standard-3">
+        <img src="image/turn.png" class="img-scale" id="turnorder">
+        <div class="white" id="dice">Dice Rolled: 5</div>
+        <div class="white" id="tile">Player 1 tile is chosen</div>
+      </div>
+    </div>
+
+
+    <div class="standard">
+      <div class="standard-1 white">Tai/Fan</div>
+      <div class="standard-2 white">
+        In mahjong, u need to have tai/fan or basically minimum points to declare a win hand. The minimum points varies
+        across different style of mahjong, but we will be talking about requiring 1 tai/fan to win. One of the easiest way
+        to get tai/fan is by having a triplets of any dragon tiles. Those are considered as 1 tai/fan. Another way is through
+        the bonus tile. Bonus tile are basically flower tiles which upon drawing, you place it at the front of your tiles. you
+        then draw a tile from the end of the tile stacks. Depending on where the host is, it can either be worth 0 or 1 tai.
+        Host will always be number 1, the player anti-clockwise to the host is player 2 and so on. They are indicated by wind.
+        Host will be east, player 2 will be south, player 3 will be west and player 4 will be north. If lets say you are south,
+        u got a 2 flower tile, it is your wind so you get a tai. Any other number will not count as tai for you. Third way is to
+        get triplets of wind tile of your own wind. The current wind, lets say east (1st game) is worth 1 tile. No matter what player
+        have triplets of it, they will get a tai/fan. If the host has triplets of it, they will get 2 tai. Another way is to either
+        get all triplets(2 tai) or all sequence(1 tai). Thats all for the basics! Enjoy
+      </div>
+      <div class="standard-3">
+        <img src="image/tiles/red.png" class="scale thedragon">
+        <img src="image/tiles/red.png" class="scale thedragon">
+        <img src="image/tiles/red.png" class="scale thedragon">
+        <div class="white">1 tai/fan</div>
+        <img src="image/tiles/east.png" class="scale thewind">
+        <img src="image/tiles/east.png" class="scale thewind">
+        <img src="image/tiles/east.png" class="scale thewind">
+        <div class="white" id="cwind">Current Wind: South</div>
+        <div class="white" id="urwind">Your Wind: East</div>
+        <div class="white" id="twind">1 tai/fan</div>
+      </div>
+    </div>
 
     <script src="js/js.js"></script>
 </body>

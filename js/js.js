@@ -11,34 +11,6 @@ menu.addEventListener('click', function(e)
     }
 });
 
-// Clicking the header
-
-
-// The Shortcut
-if (document.URL.includes("index.html"))
-{
-    var overview = document.querySelector('.sc-1');
-
-overview.addEventListener('click', function()
-{
-    window.location.href = "overview.html"
-})
-
-var howtoplay = document.querySelector('.sc-2');
-
-howtoplay.addEventListener('click', function()
-{
-    window.location.href = "howtoplay.html"
-})
-
-var tips = document.querySelector('.sc-3');
-
-tips.addEventListener('click', function()
-{
-    window.location.href = "tips.html"
-})
-}
-
 const cha = ["cha1.png", "cha2.png", "cha3.png", "cha4.png", "cha5.png", "cha6.png", "cha7.png", "cha8.png", "cha9.png"];
 const dot = ["dot1.png", "dot2.png", "dot3.png", "dot4.png", "dot5.png", "dot6.png", "dot7.png", "dot8.png", "dot9.png"];
 const bam = ["bam1.png", "bam2.png", "bam3.png", "bam4.png", "bam5.png", "bam6.png", "bam7.png", "bam8.png", "bam9.png"];
@@ -310,5 +282,130 @@ if (document.URL.includes("howtoplay.html"))
             kong[2].src = kong[0].src;
             kong[3].src = kong[0].src;
         })
+    }
+}
+
+let current = 1;
+let cwin = 0;
+
+let randr = 0;
+
+if (document.URL.includes("tips.html"))
+{
+    var table = document.querySelector('#table');
+    var currentwind = document.querySelector('#wind');
+    var outcome = document.querySelector('#outcome');
+    var host = document.querySelector('#host');
+
+    var cwind = ["East", "South", "West", "North"];
+    var ocome = ["~Host Win~", "~Game Draw~", "~Non-Host Win~", "~Game Draw with Kong~"];
+    var hst = ["~Host Remain~", "~Host Pass Down~"];
+
+    table.addEventListener('click', function()
+    {
+        currentwind.innerHTML = "";
+        let ran = Math.floor(Math.random() * 4);
+
+        outcome.innerHTML = ocome[ran];
+
+        if(ran < 2)
+        {
+            host.innerHTML = hst[0];
+        }
+        else
+        {
+            host.innerHTML = hst[1];
+            currentwind.innerHTML = cwind[cwin] + "-" + current + "->" 
+            current++;
+        }
+
+        if (current == 5)
+        {
+            cwin++;
+            current = 1;
+        }
+
+        if (cwin == 4)
+        {
+            cwin = 0;
+        }
+
+        currentwind.innerHTML += cwind[cwin] + "-" + current;
+    })
+
+    var turn = document.querySelector('#turnorder');
+    var dice = document.querySelector('#dice');
+    var whosetile = document.querySelector('#tile');
+
+    turn.addEventListener('click', function()
+    {
+        let ran = Math.floor(Math.random() * 17) + 2;
+        dice.innerHTML = "Dice Rolled: " + ran;
+
+        var whose;
+        for(ran; ran > 4; ran)
+        {
+            ran -= 4;
+        }
+
+        whose = ran;
+
+        whosetile.innerHTML = "Player " + whose + " tile is chosen";
+    })
+
+    var thedragon = document.querySelectorAll('.thedragon');
+    var thewind = document.querySelectorAll('.thewind');
+    var crwind = document.querySelector('#cwind');
+    var urwind = document.querySelector('#urwind');
+    var twind = document.querySelector('#twind');
+
+    for (let i = 0; i < thedragon.length; ++i)
+    {
+        thedragon[i].addEventListener('click', function()
+        {
+            randr++;
+            if (randr >= 3)
+            {
+                randr = 0;
+            }
+            let ran = randr + 31;
+
+            thedragon[0].src = RandomTiles(ran);
+            thedragon[1].src = thedragon[0].src;
+            thedragon[2].src = thedragon[0].src;
+        });
+    }
+    
+    for (let i = 0; i < thedragon.length; ++i)
+    {
+        thewind[i].addEventListener('click', function()
+        {
+            let ran = Math.floor(Math.random() * 4) + 27;
+
+            thewind[0].src = RandomTiles(ran);
+            thewind[1].src = thewind[0].src;
+            thewind[2].src = thewind[0].src;
+
+            let cran = Math.floor(Math.random() * 4);
+            crwind.innerHTML = "Current Wind: " + cwind[cran];
+
+            let uran = Math.floor(Math.random() * 4);
+            urwind.innerHTML = "Your Wind: " + cwind[uran];
+
+            let tai = 0;
+
+            ran -= 27;
+            if (cran == ran)
+            {
+                tai += 1;
+            }
+
+            if (uran == ran)
+            {
+                tai += 1;
+            }
+
+            twind.innerHTML = tai + " tai/fan";
+        });
     }
 }
