@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 
+/* Set the font for the website*/
 html{
     font-family: 'Roboto Slab', sans-serif;
 }
 
+/* Everything in the code has a margin of 0% by default*/
 *{
     margin: 0%;
 }
-
+/* Set the default background color*/
 body{
     background-color: rgb(34,34,34);
 }
